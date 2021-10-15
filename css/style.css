@@ -7,13 +7,15 @@ header {
     color: #fff;
 }
 .content {
-    background-color: yellow;
-    min-height: 350px;
-    padding: 10px;
+    background-color: #eee;
+    min-height: 400px;
+    padding: 20px;
 }
 footer {
-    background-color: greenyellow;
-    padding: 10px;
+    background-color: #007965;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
 
 .top {
@@ -45,4 +47,27 @@ nav a {
 nav a:hover {
     background-color: #045e4f;
     color: #000;
+}
+
+.article {
+    float: left;
+    width: 75%;
+}
+.sidebar {
+    float: right;
+    width: 23%;
+}
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .article,
+    .sidebar {
+        width: 100%;
+    }
 }
